@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fall2018.csc2017.GameCentre">
+
+    <application
+        android:name="fall2018.csc2017.GameCentre.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="GameCentre"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="fall2018.csc2017.GameCentre.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="fall2018.csc2017.GameCentre.GameListActivity"></activity>
+        <activity android:name="fall2018.csc2017.GameCentre.StartingActivity"></activity>
+        <activity android:name="fall2018.csc2017.GameCentre.StartingSlidingActivity"></activity>
+        <activity android:name="fall2018.csc2017.GameCentre.StartingShogiActivity"></activity>
+        <activity android:name="fall2018.csc2017.GameCentre.StartingConnectFourActivity"></activity>
+        <activity android:name="fall2018.csc2017.GameCentre.ScoreboardActivity"></activity>
+        <activity android:name="fall2018.csc2017.GameCentre.GameActivity"></activity>
+        <activity android:name="fall2018.csc2017.GameCentre.SlidingActivity"></activity>
+        <activity android:name="fall2018.csc2017.GameCentre.ShogiActivity"></activity>
+        <activity android:name="fall2018.csc2017.GameCentre.ConnectFourActivity"></activity>
+        <activity android:name="fall2018.csc2017.GameCentre.LeaderBoardActivity"></activity>
+    </application>
+
+</manifest>

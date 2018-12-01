@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector">
+
+    <TextView
+        android:id="@+id/GameText"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="7dp"
+        android:gravity="center"
+        android:text="Welcome To Sliding Tiles \n A Puzzle Game where you must arrange the numbers in the correct order"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="364dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="31dp"
+        app:srcCompat="@drawable/bg_darkred" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="294dp"
+        android:layout_height="43dp"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="36dp"
+        android:text="Sliding Tiles"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/GameText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="41dp"
+        android:background="@drawable/bg_orange"
+        android:text="New Game"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/LoadButton"
+        android:layout_width="152dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/GameText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="42dp"
+        android:layout_toStartOf="@+id/StartButton"
+        android:background="@drawable/bg_orange"
+        android:text="Load Saved Game"
+        tools:ignore="HardcodedText" />
+
+    <!-- <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GameText"
+        android:layout_toEndOf="@+id/StartButton"
+        android:text="Save Game" />-->
+
+    <Spinner
+        android:id="@+id/dropdown_size"
+        android:layout_width="157dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@+id/dropdown_undo" />
+
+    <TextView
+        android:id="@+id/txtDropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dropdown_size"
+        android:layout_below="@+id/StartButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_toEndOf="@+id/txtUndo"
+        android:text="Select a Size: "
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txtUndo"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoadButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="161dp"
+        android:text="Enter Undo Limit"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnScoreboard"
+        android:layout_width="153dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/StartButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/bg_darkorange"
+        android:text="View Scoreboard"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/dropdown_undo"
+        android:layout_width="158dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/txtDropdown"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="100dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="172dp"
+        android:src="@drawable/tilesgrid" />
+
+</RelativeLayout>

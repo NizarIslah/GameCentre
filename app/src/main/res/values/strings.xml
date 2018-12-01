@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SlidingTiles</string>
+    <string name="new_game1">New Game</string>
+    <string name="load_game">load_game</string>
+    <string name="welcome">Welcome to Hasami Shogi! This is a Japanese board game, capture all the enemies to win!</string>
+    <string name="launch_scoreboard1">Launch Scoreboard</string>
+    <string name="p2_username">P2 Username....</string>
+    <string name="p2_password">P2 Password</string>
+    <string name="hasami_shogi">Hasami Shogi</string>z
+    <string name="imageView8">imageView7</string>
+    <string name="load_game1">Load Game</string>
+    <string name="new_game">New Game2</string>
+    <string name="welcome1">Welcome to Connect4! In this game you must get 4 tiles matching to win!</string>
+    <string name="launch_scoreboard">Launch Scoreboard</string>
+    <string name="p2_username2">P2 Username</string>
+    <string name="p2_password2">P2 Password</string>
+    <string name="connect4">Connect 4</string>
+    <string name="imageview9">imageView9</string>
+    <string name="welcome2">welcome</string>
+    <string name="hesami_shogi">Hesami Shogi</string>
+    <string name="connect_4">Connect 4</string>
+    <string name="imageViw1">TODO</string>
+    <string name="choose_game1">choose_game1</string>
+    <string name="choose_a_game">Choose a Game</string>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fall2018.csc2017.GameCentre.StartingConnectFourActivity"
+    android:background="@drawable/vector">
+
+
+    <Button
+        android:id="@+id/btnLoadGameConnect4"
+        android:layout_width="134dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="244dp"
+        android:background="@drawable/bg_orange"
+        android:text="Load Game" />
+
+    <Button
+        android:id="@+id/btnStartGameC4"
+        android:layout_width="134dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/btnLoadGameConnect4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="54dp"
+        android:layout_toEndOf="@+id/btnLoadGameConnect4"
+        android:background="@drawable/bg_orange"
+        android:text="New Game" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="174dp"
+        app:srcCompat="@drawable/grid" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="35dp"
+        android:text="Welcome to Connect4! In this game you must get 4 tiles matching to win! "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/dropdownC4"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="53dp" />
+
+    <Button
+        android:id="@+id/btnScoreboardC4"
+        android:layout_width="278dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/dropdownC4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/bg_darkorange"
+        android:text="Launch Scoreboard" />
+
+    <EditText
+        android:id="@+id/txtP2UsernameC4"
+        android:layout_width="153dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/dropdownC4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="258dp"
+        android:ems="10"
+        android:hint="P2 Username..."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtP2PasswordC4"
+        android:layout_width="156dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/dropdownC4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="255dp"
+        android:layout_toEndOf="@+id/txtP2UsernameC4"
+        android:ems="10"
+        android:hint="P2 Password..."
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="294dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="62dp"
+        android:background="@drawable/bg_darkred"
+        android:text="Connect 4"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>

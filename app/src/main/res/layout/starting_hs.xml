@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector"
+    tools:context="fall2018.csc2017.GameCentre.StartingShogiActivity">
+
+
+    <Button
+        android:id="@+id/btnLoadGameHS"
+        android:layout_width="621dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/bg_orange"
+        android:text="@string/load_game" />
+
+    <Button
+        android:id="@+id/btnStartGameHS"
+        android:layout_width="346dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/btnLoadGameHS"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_orange"
+        android:text="New Game" />
+
+    <Spinner
+        android:id="@+id/dropdownHS"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDropdown_hs"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="66dp" />
+
+    <TextView
+        android:id="@+id/txtHSDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/btnLoadGameHS"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="11dp"
+        android:text="Welcome to Hasami Shogi! This is a Japanese board game, capture all the enemies to win!"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="182dp"
+        app:srcCompat="@drawable/shogigrid" />
+
+    <Button
+        android:id="@+id/btnScoreboardHS"
+        android:layout_width="288dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/txtP2PasswordHS"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="63dp"
+        android:background="@drawable/bg_darkorange"
+        android:text="Launch Scoreboard" />
+
+    <EditText
+        android:id="@+id/txtP2UsernameHS"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStartGameHS"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="199dp"
+        android:ems="10"
+        android:hint="P2 Username...."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtP2PasswordHS"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStartGameHS"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="13dp"
+        android:ems="10"
+        android:hint="P2 Password..."
+        android:inputType="textPassword" />
+
+    <Spinner
+        android:id="@+id/dropdown_undo_hs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUndo_hs"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="72dp" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="294dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/imageView8"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="59dp"
+        android:background="@drawable/bg_darkred"
+        android:text="Hasami Shogi"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtDropdown_hs"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnScoreboardHS"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="234dp"
+        android:text="Select a Size: "
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txtUndo_hs"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnScoreboardHS"
+        android:layout_alignStart="@+id/txtDropdown"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="21dp"
+        android:text="Enter Undo Limit"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>

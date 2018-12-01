@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector">>
+
+    <TextView
+        android:id="@+id/globalSCHeader"
+        android:layout_width="271dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_dark_purple"
+        android:text="Leaderboards "
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goToGameListbtn"
+        android:layout_width="152dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_darkorange"
+        android:text="Go To Game List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/goToLocalScoreboard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/goToLocalScoreboard"
+        android:layout_width="152dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_darkorange"
+        android:text="Go To User Stats"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/c4HighScores"
+        android:layout_width="354dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="13dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hsHighScores" />
+
+    <TextView
+        android:id="@+id/hsHighScores"
+        android:layout_width="352dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="13dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stHighScores" />
+
+    <TextView
+        android:id="@+id/stHighScores"
+        android:layout_width="351dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/globalSCHeader" />
+
+    <TextView
+        android:id="@+id/slidingTilesHeader"
+        android:layout_width="160dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/bg_darkred"
+        android:text="Sliding Tiles"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/globalSCHeader" />
+
+    <TextView
+        android:id="@+id/HasamiShogiHeader"
+        android:layout_width="160dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/bg_darkred"
+        android:text="Hasami Shogi"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stHighScores" />
+
+    <TextView
+        android:id="@+id/Connect4Header"
+        android:layout_width="160dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/bg_darkred"
+        android:text="Connect 4"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hsHighScores" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="55dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/slidingTilesHeader"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/globalSCHeader"
+        app:srcCompat="@drawable/tilesgrid" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="55dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/HasamiShogiHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stHighScores"
+        app:srcCompat="@drawable/shogigrid" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="55dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/Connect4Header"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hsHighScores"
+        app:srcCompat="@drawable/grid" />
+</android.support.constraint.ConstraintLayout>

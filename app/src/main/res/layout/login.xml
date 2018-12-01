@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/vector">
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="250dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="84dp"
+        android:contentDescription="@string/welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/welcome" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="281dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_marginTop="24dp"-->
+        <!--android:layout_marginEnd="48dp"-->
+        <!--android:layout_marginBottom="25dp"-->
+        <!--android:fontFamily="casual"-->
+        <!--android:text="Welcome to Game Centre"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:textSize="21sp"-->
+        <!--android:textStyle="bold"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/field_username"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_chainStyle="packed"-->
+        <!--tools:ignore="HardcodedText" />-->
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="259dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/bg_purple"
+        android:text="Log In "
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/field_password"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/field_username"
+        android:layout_width="313dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:textAlignment="viewStart"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/field_password"
+        android:layout_width="313dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/field_username"
+        tools:ignore="Autofill,HardcodedText" />
+
+
+    <Button
+        android:id="@+id/btn_forgot_password"
+        android:layout_width="156dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="112dp"
+        android:background="@drawable/bg_dark_purple"
+        android:text="Forgot Password?"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        tools:ignore="HardcodedText" />
+
+
+    <EditText
+        android:id="@+id/field_username_su"
+        android:layout_width="313dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_forgot_password"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/field_password_su"
+        android:layout_width="308dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/field_username_su"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/field_confirmpassword_su"
+        android:layout_width="313dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/field_password_su"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/field_answer"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Answer"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/securityquestions"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_su"
+        android:layout_width="250dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_black"
+        android:text="Sign Up"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/field_answer"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/securityquestions"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/field_confirmpassword_su" />
+
+
+</android.support.constraint.ConstraintLayout>
