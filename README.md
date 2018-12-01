@@ -36,7 +36,7 @@ Hasami Shogi is a Japanese board game requiring players to use strategy to captu
 There are several features on the Hasami Shogi start screen.
 * The dropdown menu on the left will allow you to select the number of times that you can "undo" a move. Your score will be adjusted accordingly. The defualt number of allowed undos per game is 3.
 * The dropdown menu on the right will allow you to select a board size. The default size is 6x6.
-* The Player 2 username and password fields will allow a second player (opponent) to log in with their account (support for multiplayer has been implemented)=
+* The Player 2 username and password fields will allow a second player (opponent) to log in with their account (support for multiplayer has been implemented)
 
 ##### Connect 4 
 Connect 4 is a board game where a player must get 4 or more tiles in any consecutive order to win the game. 
@@ -53,3 +53,5 @@ https://www.cs.bham.ac.uk/~mdr/teaching/modules04/java2/TilesSolvability.html
 
 The following StackOverflow post was used for help when attempting to create a GlobalApplication class to resolve some major issues involving Context: 
 https://stackoverflow.com/questions/7144177/getting-the-application-context
+
+This app was a class project for CSC207 at UofT.
